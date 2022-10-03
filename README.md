@@ -7,6 +7,10 @@
 
 <img src="https://github.com/PugPickles/Timelapsify/blob/a6e96a25002bcc3cf8ba47c89c66e3b3aa1654fc/stuff/scheme.png">
 
+## Note
+
+In my case it is important to connect GND, otherwise the triggering will not work.
+
 
 ## Use
 
