@@ -1,4 +1,4 @@
-# Timelapsify
+<img src="https://github.com/PugPickles/Timelapsify/blob/7068fa27c50102a97d95cfb147f8dd687d9ee444/stuff/icon.png">
 
 ### Tested with Canon EOS cameras, may be that for other cameras things must be changed
 
