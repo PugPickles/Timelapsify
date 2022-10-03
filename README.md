@@ -4,6 +4,10 @@
 
 ### Tested with Canon EOS cameras, may be that for other cameras things must be changed
 
+
+<img src="https://github.com/PugPickles/Timelapsify/blob/a6e96a25002bcc3cf8ba47c89c66e3b3aa1654fc/stuff/scheme.png">
+
+
 ## Use
 
 * Connect ESP with power
