@@ -27,6 +27,4 @@ or
 
 <img src="https://github.com/PugPickles/Timelapsify/blob/4c4e57f397a1dd98b67742ae611588ed06f26919/stuff/Screenshot.jpg" width="400">
 
-<br><br>
-
 The Android app is quick and dirty, so is a bit buggy
