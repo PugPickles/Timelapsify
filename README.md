@@ -15,4 +15,4 @@ or
 * Call the page ```http://192.168.1.1``` in the browser
 
 
-<img src="https://github.com/PugPickles/Timelapsify/blob/4c4e57f397a1dd98b67742ae611588ed06f26919/stuff/Screenshot.jpg">
+<img src="https://github.com/PugPickles/Timelapsify/blob/4c4e57f397a1dd98b67742ae611588ed06f26919/stuff/Screenshot.jpg" width="400">
