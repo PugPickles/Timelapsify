@@ -11,6 +11,8 @@
 
 In my case it is important to connect GND, otherwise the triggering will not work.
 
+The pins for the connector do not have to be the same, test best with a cable which pin is for what (And check if the pins to trigger and detect (manual release) are high (3.3V))
+
 
 ## Use
 
