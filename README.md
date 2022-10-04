@@ -34,3 +34,4 @@ The Android app is quick and dirty, so is a bit buggy
 ## ToDo
 * App > No longer call the page directly but put it in the app (problems loading the page)
 * App > Detect when wifi was disconnected
+* Timer Calculator > Change from total images/total time to video time (e.g. 60spf) and time between images, Calculation for required number of images
