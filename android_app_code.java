@@ -11,7 +11,6 @@ import android.net.NetworkRequest;
 import android.net.wifi.WifiManager;
 import android.net.wifi.WifiNetworkSpecifier;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -82,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
                     ConnectivityManager.NetworkCallback() {
                         public void onAvailable(Network network) {
                             super.onAvailable(network);
-                            Log.d("Timelapsify", "available: " + network);
                             cm.bindProcessToNetwork(network);
 
                             webview.post(new Runnable() {
@@ -91,7 +89,8 @@ public class MainActivity extends AppCompatActivity {
                                     webview.setWebViewClient(new WebViewClient());
                                     webview.clearCache(true);
                                     webview.getSettings().setJavaScriptEnabled(true);
-                                    webview.loadUrl("http://192.168.1.1");
+                                    webview.getSettings().setAllowUniversalAccessFromFileURLs(true);
+                                    webview.loadUrl("file:///android_asset/index.html");
                                 }
                             });
 
@@ -111,8 +110,6 @@ public class MainActivity extends AppCompatActivity {
             error.setVisibility(View.VISIBLE);
             reload_btn.setVisibility(View.VISIBLE);
             loader_txt.setText("Wifi connection can't establish!");
-
-            Log.e("Timelapsify", e.toString());
         }
     }
 }
