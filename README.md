@@ -1,3 +1,4 @@
+
 <img src="https://github.com/PugPickles/Timelapsify/blob/7068fa27c50102a97d95cfb147f8dd687d9ee444/stuff/icon.png" width="256" heigh="256">
 
 # Timelapsify
@@ -28,3 +29,8 @@ or
 <img src="https://github.com/PugPickles/Timelapsify/blob/4c4e57f397a1dd98b67742ae611588ed06f26919/stuff/Screenshot.jpg" width="400">
 
 The Android app is quick and dirty, so is a bit buggy
+
+
+## ToDo
+* App > No longer call the page directly but put it in the app (problems loading the page)
+* App > Detect when wifi was disconnected
