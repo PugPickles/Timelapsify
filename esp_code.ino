@@ -288,7 +288,7 @@ const char index_html[] = R"=====(
         <input type="number" placeholder="FPS" id="cal_vid_fps">
         <input type="number" placeholder="Length (s)" id="cal_vid_length">
 
-        <p>Time per image</p>
+        <p>Total time</p>
         <input type="time" id="cal_vid_timer" value="00:00:00" min="00:00:05" step="1">
 
         <button id="start_cal">Calculate</button>
@@ -538,11 +538,11 @@ const char index_html[] = R"=====(
     document.getElementById("start_cal").addEventListener("click", function () {
         let fps = document.getElementById("cal_vid_fps").value;
         let length = document.getElementById("cal_vid_length").value;
-        let timer = document.getElementById('cal_vid_timer').value.split(":");
+        let total_time = document.getElementById('cal_vid_timer').value.split(":");
 
-        let h = timer[0];
-        let m = timer[1];
-        let s = timer[2];
+        let h = total_time[0];
+        let m = total_time[1];
+        let s = total_time[2];
 
         if (fps == "") {
             document.getElementById('cal_vid_fps').style.border = "1px solid #f33";
@@ -571,12 +571,14 @@ const char index_html[] = R"=====(
 
         let vid_imgs = Math.floor(fps * length);
 
-        let timer_s = Math.floor((h * 3600) + (m * 60) + parseFloat(s));
+        let total_time_s = Math.floor((h * 3600) + (m * 60) + parseFloat(s));
 
-        let img_for_vid = Math.floor(vid_imgs * timer_s).toFixed(0);
+        console.log("Time: ", total_time_s, " | IMG/S: ", vid_imgs)
 
-        document.getElementById('timer').value = timer_s;
-        document.getElementById('images').value = img_for_vid;
+        let vid_img_timer = Math.floor(total_time_s / vid_imgs).toFixed(0);
+
+        document.getElementById('timer').value = vid_img_timer;
+        document.getElementById('images').value = vid_imgs;
 
         document.getElementById('images').dispatchEvent(new Event('input'));
     });
