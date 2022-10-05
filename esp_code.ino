@@ -7,11 +7,11 @@ int cam_inp = 5;      // D1   Makes the camera think that a hand release is plug
 int cam_trigger = 4;  // D2   Triggers the camera to take a photo
 
 
-// Wifi data (if the app is used, this must also be changed for the app)
+// Wifi data (if changed and if the app is used, this must also be changed for the app)
 const char* ssid = "Timelapsify";
 const char* password = "g3t_th3_fuck_out";
 
-// IP stuff, if changed must also be changed for app
+// (if changed and if the app is used, this must also be changed for the app (index.html))
 IPAddress local_ip(192,168,1,1);
 IPAddress gateway(192,168,1,1);
 IPAddress subnet(255,255,255,0);
